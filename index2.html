@@ -7,7 +7,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/*head styling*/
+/* Head styling */
 h1 {
   font-size: 2em;
   margin: 0;
@@ -18,7 +18,7 @@ h2 {
   color: #333;
 }
 
-/*paragraph styling*/
+/* Paragraph styling */
 p {
   font-size: 1em;
   color: #555;
@@ -53,21 +53,28 @@ p {
 }
 
 /* Contact & Summary styling */
-.contact-summary {
+.contact-summary,
+.skills-education,
+.courses-hobbies {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .contact-summary .left,
-.contact-summary .right {
+.contact-summary .right,
+.skills-education .left,
+.skills-education .right,
+.courses-hobbies .left,
+.courses-hobbies .right {
   width: 45%;
 }
 
 .vertical-line {
   width: 2px;
   background-color: #ccc;
-  align-self: stretch;
+  height: auto;
+  margin: 0 20px;
 }
 
 ul {
@@ -77,7 +84,7 @@ ul {
 }
 
 li {
-  margin-right: 20px; /* space between elements*/
+  margin-right: 20px; /* space between elements */
   font-size: 1em;
   color: #555;
 }
@@ -88,30 +95,7 @@ hr {
   margin: 20px 0;
 }
 
-/*styling the classes
- to let them in right left sides*/
-.contact-summary,
-.skills-education,
-.courses-hobbies {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-/*set width*/
-.left, .right {
-  width: 45%;
-}
-
-/*set vertical line*/
-.vertical-line {
-  width: 2px;
-  background-color: #ccc;
-  height: auto;
-  margin: 0 20px;
-}
-
-/*to add spaces around classes*/
+/* Clearfix */
 .clear {
   clear: both;
 }
