@@ -69,6 +69,28 @@ p {
 .courses-hobbies .right {
   width: 45%;
 }
+.skills-education,
+.courses-hobbies {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.skills-education .left,
+.skills-education .right,
+.courses-hobbies .left,
+.courses-hobbies .right {
+  width: 45%;
+}
+
+.skills-education .vertical-line,
+.courses-hobbies .vertical-line {
+  width: 2px;
+  background-color: #ccc;
+  height: auto;
+  margin: 0 10px;
+}
 
 .vertical-line {
   width: 2px;
@@ -78,16 +100,16 @@ p {
 }
 
 ul {
-  padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
+  padding-left: 20px; 
+  list-style-position: inside; 
 }
 
 li {
-  margin-right: 20px; /* space between elements */
   font-size: 1em;
   color: #555;
+  margin-bottom: 10px;
 }
+
 
 hr {
   border: none;
